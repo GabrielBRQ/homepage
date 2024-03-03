@@ -13,7 +13,7 @@
 body {
     background-color: #111827;
     width: 100%;
-    padding: 2vw;
+    padding: 0 2vw;
     font-family: roboto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -27,16 +27,102 @@ body {
 }
 
 .left {
-    padding-top: 3vh;
+    background-color: #23232d;
+    width: 21vw;
+    height: 100vh;
+    position: fixed;
+}
+
+aside {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.aside-header {
+    padding: 6vh 5vh;
+    text-align: center;
+}
+
+.aside-header .icon {
+    height: 13vh;
+    border-radius: 50%;
+}
+
+.aside-header img {
+    height: 2vh;
+}
+
+.aside-header p {
+    margin: 1vh 0 1vh 0;
+    color: #8c8cae;
+    font-size: .8em;
+}
+
+.email {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.aside-content {
     display: flex;
     flex-direction: column;
-    background-color: #23232d;
-    min-width: 21vw;
+    gap: 5vh;
+    padding: 4vh;
+    background-color: #20202a;
+    height: 100%;
+    font-size: .8em;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2vh;
+    background-color: #20202a;
+    font-size: .8em;
+    width: 100%;
+}
+
+.about h4 {
+    align-self: center;
+    border-top: 1px solid gray;
+    padding-top: 2vh;
+    width: 80%;
+}
+
+.about p {
+    text-align: start;
+    width: 80%;
+    margin-bottom: 3vh;
+}
+
+.aside-footer {
+    padding: 1.5vh 1vh 1.5vh 1vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aside-footer img {
+    height: 3vh;
 }
 
 .right {
     width: 100%;
-    padding: 3vh 5vh 3vh 5vh;
+    padding: 3vh 5vh 3vh calc(21vw + 5vh);
     display: flex;
     flex-direction: column;
     gap: 3vh;
@@ -70,7 +156,7 @@ main {
     margin: 3vh 0 3vh 0;
 }
 
-.tech-container h2{
+.tech-container h2 {
     margin-bottom: 3vh;
 }
 
@@ -93,8 +179,8 @@ main {
     align-items: center;
 }
 
-.projects-title{
-    margin: 5vh 0 5vh 0;
+.projects-title {
+    margin: 1vh 0 5vh 0;
 }
 
 .project {
@@ -128,10 +214,10 @@ main {
     gap: 2vw;
 }
 
-.work-buttons a{
+.work-buttons a {
     font-family: roboto;
     background-color: #ffc406;
-    color: #000;    
+    color: #000;
     border-style: none;
     padding: 1.3vh 3vh 1.3vh 3vh;
     min-width: 10vw;
@@ -139,7 +225,7 @@ main {
     text-decoration: none;
 }
 
-.work-buttons a:last-child{
+.work-buttons a:last-child {
     background-color: #8c8cae;
 }
 
@@ -148,7 +234,7 @@ footer {
     padding: 3vh 5vh 3vh 5vh;
 }
 
-footer h2{
+footer h2 {
     margin-bottom: 5vh;
 }
 
