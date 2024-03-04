@@ -287,6 +287,19 @@ footer h2 {
     background-color: #ffc406;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-15%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 @media only screen and (max-width: 1080px) {
     body {
         padding: 0;
@@ -317,7 +330,7 @@ footer h2 {
         font-size: 1em;
     }
 
-    .project-img{
+    .project-img {
         margin: 15px;
     }
 
@@ -348,7 +361,7 @@ footer h2 {
 
 }
 
-@media only screen and (min-width: 1800px) and (orientation: landscape){
+@media only screen and (min-width: 1800px) and (orientation: landscape) {
     .right {
         padding: 3vh 5vh 3vh calc(20vw + 5vh);
     }
@@ -373,7 +386,9 @@ footer h2 {
         font-size: 2.3vh;
     }
 
-    p, .aside-header p, .work-buttons a {
+    p,
+    .aside-header p,
+    .work-buttons a {
         font-size: 2vh;
     }
 }
